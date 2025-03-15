@@ -1137,7 +1137,7 @@ def main():
 
     # Tests results
     print("Tests results...\n")
-    
+
     report = classification_report(y_test, y_pred)
 
     report_file = os.path.join(
@@ -1149,10 +1149,11 @@ def main():
 
     # Step 12: Save the model
     print("Saving the model...\n")
-    
-    model_pkl_file = os.path.join(OUTPUT_DIR_MODEL, "ai_classifier_model.pkl") 
-    with open(model_pkl_file, 'wb') as file:  
+
+    model_pkl_file = os.path.join(OUTPUT_DIR_MODEL, "ai_classifier_model.pkl")
+    with open(model_pkl_file, "wb") as file:
         pickle.dump(classifier, file)
+
 
 if __name__ == "__main__":
     main()
