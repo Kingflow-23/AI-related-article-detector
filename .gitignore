@@ -1,0 +1,12 @@
+__pycache__
+
+Scripts/
+Lib/
+Include
+
+pyvenv.cfg
+
+share
+
+# model 
+output/model_output/ai_classifier_model.pkl 
