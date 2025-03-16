@@ -102,6 +102,25 @@ Use the Clear Cache button in the sidebar to refresh loaded resources (e.g., aft
 
 The Logistic Regression model shows **overfitting**, with **perfect training accuracy (1.0)** but a **lower cross-validation score**, indicating poor generalization. The **classification report** highlights a severe class imbalance:  
 
+![UMAP_classification_result_2025-03-15_18-15-04](https://github.com/user-attachments/assets/a9c0872d-a31c-4fa6-be5d-53f7a8e526a3)
+
+![PCA_classification_result_2025-03-15_18-15-02](https://github.com/user-attachments/assets/4c5209fa-53fa-41de-8a0b-fb64fae8034b)
+
+![learning_curve_2025-03-15_18-15-05](https://github.com/user-attachments/assets/9f7c4bb8-1206-4a31-8cc0-8a77481e4d11)
+
+```
+Classification Report:
+
+              precision    recall  f1-score   support
+
+           0       1.00      0.02      0.04       100
+           1       0.51      1.00      0.67       100
+
+    accuracy                           0.51       200
+   macro avg       0.75      0.51      0.36       200
+weighted avg       0.75      0.51      0.36       200
+```
+
 - **Non-AI-related (Class 0)**: **High precision (1.00) but very low recall (0.02)** → The model fails to detect most non-AI articles.  
 - **AI-related (Class 1)**: **Full recall (1.00) but low precision (0.51)** → Many false positives.  
 - **Overall accuracy: 51%**, barely better than random guessing.  
