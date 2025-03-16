@@ -106,6 +106,8 @@ The Logistic Regression model shows **overfitting**, with **perfect training acc
 
 ![PCA_classification_result_2025-03-15_18-15-02](https://github.com/user-attachments/assets/4c5209fa-53fa-41de-8a0b-fb64fae8034b)
 
+More 'beautiful' are visible in the interactive plots in output folder. ✨
+
 ![learning_curve_2025-03-15_18-15-05](https://github.com/user-attachments/assets/9f7c4bb8-1206-4a31-8cc0-8a77481e4d11)
 
 ```
